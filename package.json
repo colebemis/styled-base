@@ -1,0 +1,20 @@
+{
+  "name": "styled-base",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colebemis/styled-base.git"
+  },
+  "keywords": [],
+  "author": "Cole Bemis <cole@colebemis.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colebemis/styled-base/issues"
+  },
+  "homepage": "https://github.com/colebemis/styled-base#readme"
+}
