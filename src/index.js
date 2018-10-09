@@ -1,4 +1,4 @@
-import { object } from 'prop-type'
+import { object } from 'prop-types'
 import styled from 'styled-components'
 
 const Base = styled.div(props => props.css)
