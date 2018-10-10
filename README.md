@@ -29,8 +29,8 @@ import Base from 'styled-base'
   css={{ 
     color: 'white',
     backgroundColor: 'black',
-    ':hover': {
-      backgroundColor: 'blue',
+    '&::before': {
+      content: '"🌎"',
     },
   }}
 >
@@ -38,7 +38,22 @@ import Base from 'styled-base'
 </Base>
 ```
 
-## Theming
+## Usage
+
+### `css` prop
+
+```jsx
+<Base css={{ fontFamily: 'sans-serif', color: 'red' }} />
+```
+
+### `as` prop
+
+```jsx
+<Base as="button" />
+<Base as={Link} />
+```
+
+### Theming
 
 ```jsx
 import React from 'react'
@@ -97,17 +112,17 @@ export default props => (
 )
 ```
 
-## Pseudo-selectors
+### Pseudo-selectors
 
 ```jsx
 <Base
   css={{
     color: 'blue',
-    ':hover': {
+    '&:hover': {
       color: 'red',
     },
-    '::before': {
-      content: '"✌️"',
+    '&::before': {
+      content: '"🌎"',
     },
   }}
 >
@@ -115,7 +130,7 @@ export default props => (
 </Base>
 ```
 
-## Responsive styles
+### Responsive styles
 
 ```js
 const theme = {
@@ -139,11 +154,34 @@ const theme = {
 ```jsx
 <Base
   css={{
-    padding: ['$spacing.1', '$spacing.2'],
+    padding: [
+      '$spacing.1',
+      '$spacing.2',
+    ],
   }}
 />
   Hello World
 </Base>
+```
+
+### Extending
+
+```jsx
+import React from 'react'
+import Base from 'styled-base'
+
+function Container({ css, ...props }) {
+  return (
+    <Base
+      css={{
+        margin: '0 auto',
+        maxWidth: '960px',
+        ...css,
+      }}
+      {...props}
+    />
+  )
+}
 ```
 
 ## Further reading
