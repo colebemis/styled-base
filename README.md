@@ -144,7 +144,12 @@ export default props => (
 #### Setting a default theme
 
 ```js
-// TODO
+import { createBase } from 'styled-base'
+import theme from './path/to/theme'
+
+const Base = createBase(theme)
+
+export default Base
 ```
 
 ### Pseudo-selectors
