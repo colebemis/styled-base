@@ -64,7 +64,7 @@ export default props => (
   <ThemeProvider theme={theme}>
     <Base 
       css={{ 
-        padding: 'spacing.2',
+        padding: 'spacing.1 spacing.2',
         color: 'colors.blue',
       }}
     >
