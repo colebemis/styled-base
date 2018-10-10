@@ -11,9 +11,9 @@
 * [Motivation](#motivation)
 * [Getting started](#getting-started)
 * [Props](#props)
+  * [`as`](#as)
   * [`css`](#css)
   * [`theme`](#theme)
-  * [`as`](#as)
 * [Usage](#usage)
   * [Theming](#theming)
   * [Pseudo-selectors](#pseudo-selectors)
@@ -58,6 +58,15 @@ import Base from 'styled-base'
 
 ## Props
 
+### `as`
+
+Type: `string` or `func`
+
+```jsx
+<Base as="button" />
+<Base as={Link} />
+```
+
 ### `css`
 
 Type: `object`
@@ -69,16 +78,6 @@ Type: `object`
 ### `theme`
 
 Type: `object`
-
-### `as`
-
-Type: `string` or `func`
-
-```jsx
-<Base as="button" />
-<Base as={Link} />
-```
-
 
 ## Usage
 
