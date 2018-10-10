@@ -46,10 +46,6 @@ import { ThemeProvider } from 'styled-components'
 import Base from 'styled-base'
 
 const theme = {
-  colors: {
-    blue: '#07f',
-    gray: '#ccc',
-  },
   spacing: [
     '0',
     '4px',
@@ -58,14 +54,19 @@ const theme = {
     '24px',
     '32px',
   ],
+  colors: {
+    blue: '#07f',
+    gray: '#ccc',
+  },
 }
 
 export default props => (
   <ThemeProvider theme={theme}>
     <Base 
-      css={{ 
-        padding: 'spacing.1 spacing.2',
-        color: 'colors.blue',
+      css={{
+        display: 'inline-block',
+        padding: '$spacing.1 $spacing.2',
+        color: '$colors.blue',
       }}
     >
       Hello World
@@ -89,7 +90,7 @@ const theme = {
 export default props => (
   <Base
     theme={theme}
-    css={{ color: 'colors.green' }}
+    css={{ color: '$colors.green' }}
   >
     Hello World
   </Base>
