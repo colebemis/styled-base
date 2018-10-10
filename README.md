@@ -11,13 +11,19 @@
 * [Motivation](#motivation)
 * [Getting started](#getting-started)
 * [Usage](#usage)
+  * [`css` prop](#css-prop)
+  * [`as` prop](#as-prop)
+  * [Theming](#theming)
+  * [Pseudo-selectors](#pseudo-selectors)
+  * [Responsive styles](#responsive-styles)
+  * [Extending](#extending)
 * [Further reading](#further-reading)
 
 ## Motivation
 
 ## Getting started 
 
-### 1. Install
+**1. Install**
 
 ```shell
 npm install styled-base styled-components
@@ -25,13 +31,13 @@ npm install styled-base styled-components
 yarn add styled-base styled-components
 ```
 
-### 2. Import
+**2. Import**
 
 ```js
 import Base from 'styled-base'
 ```
 
-### 3. Use
+**3. Use**
 
 ```jsx
 <Base 
