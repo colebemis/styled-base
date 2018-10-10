@@ -115,6 +115,37 @@ export default props => (
 </Base>
 ```
 
+## Responsive styles
+
+```js
+const theme = {
+  spacing: [
+    '0',
+    '4px',
+    '8px',
+    '16px',
+    '24px',
+    '32px',
+  ],
+  breakpoints: [
+    '576px',
+    '768px',
+    '992px',
+    '1200px',
+  ],
+}
+```
+
+```jsx
+<Base
+  css={{
+    padding: ['$spacing.1', '$spacing.2'],
+  }}
+/>
+  Hello World
+</Base>
+```
+
 ## Further reading
 
 * [Patterns for Style Composition in React](http://jxnblk.com/writing/posts/patterns-for-style-composition-in-react/) by [Brent Jackson](https://twitter.com/jxnblk)
