@@ -195,8 +195,25 @@ const theme = {
 <Base
   css={{
     padding: [
-      '$spacing.1',
-      '$spacing.2',
+      '$spacing.1', // 4px at all viewport widths
+      '$spacing.2', // 8px from the next breakpoint (576px) and up
+      '$spacing.3', // 16px from the next breakpoint (768px) and up
+    ],
+  }}
+/>
+  Hello World
+</Base>
+```
+
+To skip setting a value at a particular breakpoint, use a `null` value in the array:
+
+```jsx
+<Base
+  css={{
+    padding: [
+      '$spacing.1', // 4px at all viewport widths
+      null,         // skip the next breakpoint (576px) (stays 4px)
+      '$spacing.2', // 8px from the next breakpoint (768px) and up
     ],
   }}
 />
