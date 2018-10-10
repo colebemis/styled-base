@@ -95,3 +95,7 @@ export default props => (
   </Base>
 )
 ```
+
+## Further reading
+
+* (Patterns for Style Composition in React)[http://jxnblk.com/writing/posts/patterns-for-style-composition-in-react/] by (Brent Jackson)[https://twitter.com/jxnblk]
