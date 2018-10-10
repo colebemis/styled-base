@@ -34,6 +34,60 @@ import Base from 'styled-base'
     },
   }}
 >
-  Example
+  Hello World
 </Base>
+```
+
+## Theming
+
+```jsx
+import React from 'react'
+import { ThemeProvider } from 'styled-components'
+import Base from 'styled-base'
+
+const theme = {
+  colors: {
+    blue: '#07f',
+    gray: '#ccc',
+  },
+  spacing: [
+    '0',
+    '4px',
+    '8px',
+    '16px',
+    '24px',
+    '32px',
+  ],
+}
+
+export default props => (
+  <ThemeProvider theme={theme}>
+    <Base 
+      css={{ 
+        padding: 'spacing.2',
+        color: 'colors.blue',
+      }}
+    >
+      Hello World
+    </Base>
+  </ThemeProvider>
+)
+```
+
+```jsx
+import React from 'react'
+import Base from 'styled-base'
+
+const theme = {
+  green: '#0f7',
+}
+
+export default props => (
+  <Base
+    theme={theme}
+    css={{ color: 'colors.green' }}
+  >
+    Hello World
+  </Base>
+)
 ```
