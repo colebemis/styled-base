@@ -1,4 +1,4 @@
-# styled-base
+# styled-base (WIP)
 
 [![Version][version-badge]][npm]
 
