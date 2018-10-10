@@ -11,9 +11,9 @@
 ### 1. Install
 
 ```shell
-npm install styled-base
+npm install styled-base styled-components
 # or
-yarn add styled-base
+yarn add styled-base styled-components
 ```
 
 ### 2. Import
