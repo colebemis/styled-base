@@ -10,9 +10,11 @@
 
 * [Motivation](#motivation)
 * [Getting started](#getting-started)
+* [Props](#props)
+  * [`css`](#css)
+  * [`theme`](#theme)
+  * [`as`](#as)
 * [Usage](#usage)
-  * [`css` prop](#css-prop)
-  * [`as` prop](#as-prop)
   * [Theming](#theming)
   * [Pseudo-selectors](#pseudo-selectors)
   * [Responsive styles](#responsive-styles)
@@ -26,9 +28,9 @@
 **1. Install**
 
 ```shell
-npm install styled-base styled-components
+npm install styled-base styled-components@beta
 # or
-yarn add styled-base styled-components
+yarn add styled-base styled-components@beta
 ```
 
 **2. Import**
@@ -53,20 +55,37 @@ import Base from 'styled-base'
 </Base>
 ```
 
-## Usage
+## Props
 
-### `css` prop
+### `css`
+
+| Type | Required | Default |
+| --- | --- | --- |
+| `object` | No | |
 
 ```jsx
 <Base css={{ fontFamily: 'sans-serif', color: 'red' }} />
 ```
 
-### `as` prop
+### `theme`
+
+| Type | Required | Default |
+| --- | --- | --- |
+| `object` | No | |
+
+### `as`
+
+| Type | Required | Default |
+| --- | --- | --- |
+| `string` or `func` | No | `"div"` |
 
 ```jsx
 <Base as="button" />
 <Base as={Link} />
 ```
+
+
+## Usage
 
 ### Theming
 
