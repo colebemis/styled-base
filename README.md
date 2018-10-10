@@ -60,7 +60,7 @@ import Base from 'styled-base'
 
 ### `css`
 
-*Type: `object`*
+Type: `object`
 
 ```jsx
 <Base css={{ fontFamily: 'sans-serif', color: 'red' }} />
@@ -68,11 +68,11 @@ import Base from 'styled-base'
 
 ### `theme`
 
-*Type: `object`*
+Type: `object`
 
 ### `as`
 
-*Type: `string` or `func`*
+Type: `string` or `func`
 
 ```jsx
 <Base as="button" />
