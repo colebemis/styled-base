@@ -127,6 +127,12 @@ export default props => (
 )
 ```
 
+#### Setting a default theme
+
+```js
+// TODO
+```
+
 ### Pseudo-selectors
 
 ```jsx
