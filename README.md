@@ -42,7 +42,8 @@ import Base from 'styled-base'
 **3. Use**
 
 ```jsx
-<Base 
+<Base
+  as="span"
   css={{ 
     color: 'white',
     backgroundColor: 'black',
