@@ -79,7 +79,9 @@ import React from 'react'
 import Base from 'styled-base'
 
 const theme = {
-  green: '#0f7',
+  colors: {
+    green: '#0f7',
+  },
 }
 
 export default props => (
