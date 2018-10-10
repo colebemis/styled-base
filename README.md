@@ -74,6 +74,8 @@ export default props => (
 )
 ```
 
+You can theme individual components by passing the `theme` prop directly:
+
 ```jsx
 import React from 'react'
 import Base from 'styled-base'
