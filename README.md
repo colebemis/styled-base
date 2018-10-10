@@ -29,7 +29,7 @@ import Base from 'styled-base'
   css={{ 
     color: 'white',
     backgroundColor: 'black',
-    '&:hover': {
+    ':hover': {
       backgroundColor: 'blue',
     },
   }}
@@ -94,6 +94,24 @@ export default props => (
     Hello World
   </Base>
 )
+```
+
+## Pseudo-selectors
+
+```jsx
+<Base
+  css={{
+    color: 'blue',
+    ':hover': {
+      color: 'red',
+    },
+    '::before': {
+      content: '"✌️"',
+    },
+  }}
+>
+  Hello World
+</Base>
 ```
 
 ## Further reading
