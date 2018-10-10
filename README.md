@@ -6,7 +6,16 @@
 
 [npm]: https://www.npmjs.com/package/styled-base
 
-## Getting Started 
+## Table of contents
+
+* [Motivation](#motivation)
+* [Getting started](#getting-started)
+* [Usage](#usage)
+* [Further reading](#further-reading)
+
+## Motivation
+
+## Getting started 
 
 ### 1. Install
 
