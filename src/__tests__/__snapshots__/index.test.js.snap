@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`css\` prop evaluates theme keys prefixed with "$" 1`] = `
+.c0 {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: -4px auto;
+  color: #07f;
+  background-color: $foo;
+}
+
+<div
+  class="c0"
+>
+  Hello World
+</div>
+`;
+
+exports[`\`css\` prop supports nesting 1`] = `
+.c0 {
+  box-sizing: border-box;
+}
+
+.c0 .foo {
+  color: red;
+}
+
+.c0 *,
+.c0 *::before,
+.c0 *::after {
+  box-sizing: inherit;
+}
+
+<div
+  class="c0"
+>
+  Hello World
+</div>
+`;
+
+exports[`\`css\` prop supports pseudo-classes and pseudo-elements 1`] = `
+.c0 {
+  color: red;
+}
+
+.c0:hover {
+  color: blue;
+}
+
+.c0::before {
+  content: "🌎";
+}
+
+<div
+  class="c0"
+>
+  Hello World
+</div>
+`;
+
+exports[`accepts a \`css\` prop 1`] = `
+.c0 {
+  color: red;
+}
+
+<div
+  class="c0"
+>
+  Hello World
+</div>
+`;
+
+exports[`accepts a \`theme\` prop 1`] = `
+.c0 {
+  color: #07f;
+}
+
+<div
+  class="c0"
+>
+  Hello World
+</div>
+`;
+
+exports[`accepts an \`as\` prop to change the rendered DOM element 1`] = `
+<span
+  class=""
+>
+  Hello World
+</span>
+`;
