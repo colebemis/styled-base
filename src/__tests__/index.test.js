@@ -92,27 +92,44 @@ describe('`css` prop', () => {
     expect(container.firstChild).toMatchSnapshot()
   })
 
-  // it('supports responsive values', () => {
-  //   const theme = {
-  //     spacing: ['0', '4px', '8px', '16px', '24px', '32px'],
-  //     fontSizes: ['12px', '14px', '16px', '20px', '24px'],
-  //     breakpoints: ['576px', '768px', '992px'],
-  //   }
+  it('supports responsive values', () => {
+    const theme = {
+      spacing: ['0', '4px', '8px', '16px', '24px', '32px'],
+      fontSizes: ['12px', '14px', '16px', '20px', '24px'],
+      breakpoints: ['576px', '768px', '992px'],
+    }
 
-  //   const { container } = render(
-  //     <ThemeProvider theme={theme}>
-  //       <Base
-  //         css={{
-  //           width: ['100%', '50%'],
-  //           padding: ['$spacing.0', '$spacing.1', '$spacing.2', '$spacing.3'],
-  //           fontSizes: [null, '$fontSizes.0', null, '$fontSizes.1', '$fontSizes.2'],
-  //         }}
-  //       >
-  //         Hello World
-  //       </Base>
-  //     </ThemeProvider>,
-  //   )
+    const { container } = render(
+      <ThemeProvider theme={theme}>
+        <Base
+          css={{
+            width: ['100%', '50%'],
+            margin: [],
+            padding: ['$spacing.0', '$spacing.1', '$spacing.2', '$spacing.3'],
+            fontSize: [
+              null,
+              '$fontSizes.0',
+              null,
+              '$fontSizes.1',
+              '$fontSizes.2',
+            ],
+          }}
+        >
+          Hello World
+        </Base>
+      </ThemeProvider>,
+    )
 
-  //   expect(container.firstChild).toMatchSnapshot()
-  // })
+    expect(container.firstChild).toMatchSnapshot()
+  })
+
+  it('provides default breakpoints', () => {
+    const { container } = render(
+      <Base css={{ width: ['100%', '90%', '80%', '70%', '60%'] }}>
+        Hello World
+      </Base>,
+    )
+
+    expect(container.firstChild).toMatchSnapshot()
+  })
 })

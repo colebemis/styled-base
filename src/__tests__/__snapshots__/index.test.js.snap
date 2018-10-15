@@ -16,6 +16,42 @@ exports[`\`css\` prop evaluates theme keys prefixed with "$" 1`] = `
 </div>
 `;
 
+exports[`\`css\` prop provides default breakpoints 1`] = `
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .c0 {
+    width: 60%;
+  }
+}
+
+<div
+  class="c0"
+>
+  Hello World
+</div>
+`;
+
 exports[`\`css\` prop supports nesting 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -49,6 +85,40 @@ exports[`\`css\` prop supports pseudo-classes and pseudo-elements 1`] = `
 
 .c0::before {
   content: "🌎";
+}
+
+<div
+  class="c0"
+>
+  Hello World
+</div>
+`;
+
+exports[`\`css\` prop supports responsive values 1`] = `
+.c0 {
+  width: 100%;
+  padding: 0;
+}
+
+@media screen and (min-width:576px) {
+  .c0 {
+    width: 50%;
+    padding: 4px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .c0 {
+    padding: 16px;
+    font-size: 14px;
+  }
 }
 
 <div
